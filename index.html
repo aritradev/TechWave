@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>TechWave</title>
 </head>
-<body>
-    <header>
-        <nav class="bg-[#1A0B2E] flex items-center justify-between px-30 py-8 text-white">
+<body class="font-[inter]">
+    <header class="bg-[#1A0B2E] text-[#FFFFFF]">
+
+        <nav class="felx items-center justify-between p-3 md:px-30 py-8 flex  ">
+            <div class="logo">
+                <h1 class="font-bold text-4xl ">Tech<span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-700">Wave</span></h1>
+            </div>
+            <div class="nav-menu hidden sm:block">
+                <ul class="flex gap-6">
+                    <li><a href="" class="hover:text-[#914beb] font-semibold">About</a></li>
+                    <li><a href="" class="hover:text-[#914beb] font-semibold">Episodes</a></li>
+                    <li><a href="" class="hover:text-[#914beb] font-semibold">Host</a></li>
+                </ul>
+            </div>
+            <div class="bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-700 rounded-full px-6 py-3 btn hidden sm:block">
+                <button><span class="font-semibold ">Subscribe</span> <a href=""><i class="fa-solid fa-arrow-right"></i></a></button>    
+            </div>
+            <div class="sm:hidden">
+                <img src="./assets/hamburger-menu.png" alt="">
+            </div>
+
+        </nav>
+        
+    </header>
+</body>
+</html>
+
+
+<!-- <div>
+    <nav class="bg-[#1A0B2E] flex items-center justify-between px-30 py-8 text-white">
             <h1 class="font-bold text-4xl ">Tech<span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-700">Wave</span></h1>
             <ul class="flex space-x-6 text-[16px]/[120%] line-">
                 <li><a href="" class="hover:text-[#914beb]">About</a></li>
@@ -19,10 +48,18 @@
         </nav>
         <section class="h-[760px] w-100% mx-auto">
             <img src="./assets/hero-bg.png" class="absolute" alt="">
-            <img src="./assets/hero-circle.png" class="relative top-22  mx-auto  max-w-[350px] max-h-[350px]  " alt="">
-            <img src="./assets/microphone.png" class="relative top-[-170px]  mx-auto" alt="">
+            <div class="absolute flex flex-col items-center justify-center h-full w-full top-2 ">  
+                <img src="./assets/hero-circle.png" class="relative top-22  mx-auto  max-w-[350px] max-h-[350px]  " alt="">
+                <img src="./assets/microphone.png" class="relative top-[-170px]  mx-auto" alt="">
+                <span class="absolute top-50 left-210 bg-[#00FF88] p-2 w-18 text-center rounded-4xl text-1xl ">NEW</span>
+            </div>
+
+            <div class="bg-black">
+                <h2>TechWave</h2>
+                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <button class="bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-700 px-4 py-2 rounded-[16px]">Listen on Spotify</button>
+                <span>Subscribe</span>
+            </div>
            
         </section>
-    </header>
-</body>
-</html>
+</div> -->
